@@ -11,6 +11,7 @@
 #define CHICKEN_MODEL  2
 #define TREE_MODEL     3
 
+
 #define EMPTY_RACE      0
 #define HUMAN_RACE      1
 #define OXIMORPHOS_RACE 2

@@ -1,9 +1,9 @@
-#ifndef HUMAN_FACTORY_H
-#define HUMAN_FACTORY_H
+#ifndef OXIMORPHOS_FACTORY_H
+#define OXIMORPHOS_FACTORY_H
 
 #include "ecs/systems/unit/raceFactory.hpp"
 
-class HumanFactory : public RaceFactory
+class OximorphosFactory : public RaceFactory
 {
 private:
     EntityManager<Unit> *units;
@@ -37,6 +37,6 @@ public:
     
 };
 
-#include "humanFactory.cpp"
+#include "oximorphosFactory.cpp"
 
 #endif

@@ -19,17 +19,6 @@ void Shader::initShader(const String& name)
     checkErrors(program, true);
 }
 
-Shader::~Shader()
-{
-    glDetachShader(program, shaders[VERTEX_SHADER]);
-    glDetachShader(program, shaders[FRAGMENT_SHADER]);
-
-    glDeleteShader(shaders[VERTEX_SHADER]);
-    glDeleteShader(shaders[FRAGMENT_SHADER]);
-
-    glDeleteProgram(program);
-}
-
 void Shader::use()
 {
     glUseProgram(program);

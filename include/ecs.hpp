@@ -11,9 +11,10 @@
 #include "ecs/systems/rendering/sprite.hpp"
 
 #include "ecs/systems/unit/unitSystem.hpp"
-#include "ecs/systems/unit/sinlgetronRace.hpp"
+#include "ecs/systems/unit/factoryRace.hpp"
 #include "ecs/systems/unit/raceFactory.hpp"
 #include "ecs/systems/unit/humanFactory.hpp"
+#include "ecs/systems/unit/oximorphosFactory.hpp"
 
 
 #ifndef ECS_LEGACY

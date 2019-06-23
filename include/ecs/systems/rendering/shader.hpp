@@ -16,8 +16,9 @@ class Shader
 public:
     Shader();
     Shader(const String& name);
-    virtual ~Shader();
+    virtual ~Shader() { };
     
+
     void initShader(const String& name);
 
     void use();
