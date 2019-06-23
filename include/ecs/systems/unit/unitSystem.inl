@@ -7,40 +7,7 @@ void UnitSystem::init()
     fabrica = FactoryMethod::getRace(HUMAN_RACE) ;
     fabrica->setUnits(&units);
     
-    // VILLAGERS
-    for(size_t i = 0; i < 5; ++i)
-    {
-        glm::vec3 pos;
-        pos.x = 4.0f * i - 8.0f;
-        pos.y = 64.0f * i;
-        pos.z = 8.0f;
-
-        fabrica->createVillager(pos);
-    }
-
-    // CHICKENS
-    for(size_t i = 0; i < 5; ++i)
-    {
-        glm::vec3 pos;
-        pos.x = 4.0f * i - 8.0f;
-        pos.y = 64.0f * i;
-        pos.z = 8.0f;
-
-        fabrica->createCattle(pos);
-    }
-
-    // TREES
-    for(size_t i = 0; i < 5; ++i)
-    {
-        glm::vec3 pos;
-        pos.x = 4.0f * i - 8.0f;
-        pos.y = 64.0f * i;
-        pos.z = 8.0f;
-
-        fabrica->spawnTree(pos);
-    }
-
-}
+} 
 
 void UnitSystem::createUnknown(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
 {
@@ -55,6 +22,46 @@ void UnitSystem::createVillager(const glm::vec3& pos, const glm::vec3& rot, cons
 void UnitSystem::createChicken(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
 {
     fabrica->createCattle(pos,rot,sca);
+}
+
+void UnitSystem::createSoilder(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->createSoilder(pos,rot,sca);
+}
+
+void UnitSystem::createShooter(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->createShooter(pos,rot,sca);
+}
+
+void UnitSystem::createArchery(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->createArchery(pos,rot,sca);
+}
+
+void UnitSystem::createCastle(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->createCastle(pos,rot,sca);
+}
+
+void UnitSystem::createBarracks(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)  
+{
+    fabrica->createBarracks(pos,rot,sca);
+}
+
+void UnitSystem::createFarm(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->createFarm(pos,rot,sca);
+}
+
+void UnitSystem::createMine(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->createMine(pos,rot,sca);
+}
+
+void UnitSystem::spawnPineTree(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
+{
+    fabrica->spawnPineTree(pos,rot,sca);
 }
 
 void UnitSystem::spawnTree(const glm::vec3& pos, const glm::vec3& rot, const glm::vec3& sca)
